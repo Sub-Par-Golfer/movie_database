@@ -109,8 +109,7 @@ button:hover {
 
 .container {
     display: flex;
-    width: 100vw;
-    max-width: 1200px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -314,6 +313,7 @@ nav {
 /* Title Page */
 #landing {
     display: flex;
+    max-width: 1300px;
     position: relative;
     padding: 96px 0px;
 }
@@ -757,6 +757,7 @@ img {
 #values {
     display: flex;
     width: 100%;
+    max-width: 1300px;
 }
 
 .values__container {
@@ -871,6 +872,7 @@ img {
 #pricing {
     display: flex;
     width: 100%;
+    max-width: 1300px;
 }
 
 .pricing__container {
@@ -1385,7 +1387,7 @@ img {
 /* Footer */
 #five__columns {
     display: flex;
-    width: 100%;
+    width: 100vw;
     padding: 96px 0 0 0;
 }
 
@@ -1474,7 +1476,7 @@ img {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 10px;
     background-color: #6415ff;
 }
 
