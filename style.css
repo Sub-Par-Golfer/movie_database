@@ -152,7 +152,7 @@ header {
 
 nav {
     display: flex;
-    width: 100vw;
+    width: 100%;
     max-width: 1300px;
     height: 44px;
     justify-content: space-between;
