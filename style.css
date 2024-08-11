@@ -109,7 +109,8 @@ button:hover {
 
 .container {
     display: flex;
-    width: 100%;
+    width: 100vw;
+    max-width: 1300px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -120,7 +121,7 @@ button:hover {
 ul {
     display: flex;
     width: 100vw;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 li {
@@ -134,7 +135,7 @@ header {
     display: flex;
     height: 100%;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     max-height: 70px;
     margin: 0 auto;
     align-items: center;
@@ -157,19 +158,21 @@ nav {
     height: 44px;
     justify-content: space-between;
     align-items: center;
+    padding: 0 5px;
 }
 
 .nav__landing {
     display: flex;
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
 }
 
 .nav__row {
-    display: flex;
     width: 100%;
     max-width: 1300px;
     justify-content: space-around;
+    
 }
 
 .nav__landing--img {
@@ -371,7 +374,7 @@ nav {
     display: block;
     vertical-align: middle;
     width: 100%;
-    padding: 0 0 96px 46px;
+    padding: 0 46px 96px 46px;
     
 }
 
@@ -922,7 +925,9 @@ img {
 
 .pricing__boxes {
     display: flex;
-    width: 100%;
+    width: 100vw;
+    max-width: 1300px;
+    
 }
 
 .price__block {
@@ -1535,7 +1540,7 @@ img {
 
 
 /* Small Phones, Tablets, Large Smartphones */
-    @media (max-width: 768px) {
+    @media (max-width: 823px) {
         .container {
             width: 100vw;
             align-items: center;
@@ -1594,9 +1599,16 @@ img {
         }
 
         .menu__backdrop {
+            position: fixed;
             border: 1px solid rgba(211, 211, 211, 0.533);
             border-radius: 10px;
-            margin: 20px;
+            margin: 0 20px;
+            top: 0;
+        }
+
+        .treact__name--landing {
+            align-items: center;
+            justify-content: start;
         }
 
         #landing {
@@ -1948,10 +1960,12 @@ img {
         .pricing__boxes {
             display: flex;
             flex-direction: column;
+            width: 100%;
         }
 
         .pricing__container {
             width: 90%;
+            max-width: 448px;
         }
 
         .price {
