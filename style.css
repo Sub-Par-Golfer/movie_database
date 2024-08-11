@@ -1540,7 +1540,7 @@ img {
 
 
 /* Small Phones, Tablets, Large Smartphones */
-    @media (max-width: 823px) {
+    @media (max-width: 960px) {
         .container {
             width: 100vw;
             align-items: center;
