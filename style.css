@@ -631,7 +631,6 @@ input {
 .quality__img--container {
     display: flex;
     width: 100%;
-    height: 100%;
 }
 
 img {
