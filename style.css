@@ -1540,7 +1540,7 @@ img {
 
 
 /* Small Phones, Tablets, Large Smartphones */
-    @media (max-width: 960px) {
+    @media (max-width: 900px) {
         .container {
             width: 100vw;
             align-items: center;
@@ -1642,9 +1642,15 @@ img {
             justify-content: center;
         }
 
+        .landing__input {
+            width: 100%;
+            max-width: 500px;
+        }
+
         .landing__get-started--btn {
             display: flex;
             width: 100%;
+            max-width: 500px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -2188,4 +2194,4 @@ img {
             margin: 32px 0 0;
         }
 }
- /* final */
+ /* final v2 */
