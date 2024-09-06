@@ -433,19 +433,21 @@ input {
 }
 
 .post__title {
+  width: 100%;
+  text-align: center;
+  height: 100%;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
   align-items: center;
   justify-content: center;
-  height: 60px;
 }
 
 .post__body {
   height: 100%;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .post__img {
@@ -493,7 +495,9 @@ input {
     width: 100%;
   } 
   
-  
+  .input__contact {
+    width: 100%;
+  }
   
  
   .modal {
@@ -533,7 +537,19 @@ input {
   .nav__link:first-child {
     display: none;
   }
+
+  .modal {
+    top: 0;
+    left: 0;
+    transform: none;
+    height: auto;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+
   .modal__half {
+    width: 100%;
     padding: 40px;
   }
   nav {
