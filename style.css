@@ -539,6 +539,10 @@ input {
     width: 100%;
   }
   
+  .movie-title--input {
+    padding: 0 20px;
+  }
+
   .nav__link:first-child {
     display: none;
   }
