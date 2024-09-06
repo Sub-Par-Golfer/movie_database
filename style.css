@@ -540,7 +540,8 @@ input {
   }
   
   .movie-title--input {
-    padding: 0 20px;
+    padding: 0 10px;
+    font-size: 14px;
   }
 
   .nav__link:first-child {
