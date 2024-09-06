@@ -407,6 +407,11 @@ input {
   display: flex;
   height: 100;
   }
+
+  .movie-title--input {
+    padding: 20px;
+  }
+
 .post-list {
     display: flex;
     flex-direction: row;
