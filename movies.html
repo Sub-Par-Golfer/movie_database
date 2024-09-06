@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W4FP Movies</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/0579d1412b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="movies.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "wciuI5vtvYyfew6j9",
+       });
+    })();
+ </script>
+ <head>
+    <body>
+        <nav>
+            <div class="row">
+                <div class="nav__container">
+                    <figure>
+                      <i class="fa-solid fa-film logo__img"><span class="logo__name">OMDb Movie & Game Search</span></i>
+                    </figure>
+                    <div class="nav__links">
+                    <ul class="nav__list">
+                        <li class="nav__link click">
+                            <a href="/index.html" target="_blank">Home</a></li>
+                        <li class="nav__link nav__link--primary click" onclick="toggleModal()">
+                            <a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal">
+              <div class="modal__half modal__about">
+                <h3 class="modal__title">Thank you for visiting</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">
+                  OMDb Movie Search
+                </h4>
+                <p class="modal__para">
+                  If you've nejoyed the ability to search for movies and want to say thank you please fill out the form next to this. If you have requests or changes you would like seen on this page please drop me a message and I'll be sure to take a look at making those changes. 
+                </p>
+                </div>
+                <div class="modal__half modal__contact">
+                <i class="fa-regular fa-circle-xmark modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                  Thank you for visiting!
+                  We will never sell your info or send you unwanted emails.
+                  This is just a personal project not a business.
+                </h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                  <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input__contact" name="user_name" type="text"></input>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input class="input__contact" name="user_email" type="email" required></input>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input__contact" name="message" type="text" required>
+                    </textarea>
+                  </div>
+                  <button id="contact__submit" class="form__submit">Send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                  <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                  Thanks for the message!
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section id="data">
+            <div class="row">
+              <div class="movie__search">
+                <div class="movie__search--container">
+                  <div class="search__label--input">
+                    <input class="movie-title--input" type="text" placeholder="Search by Title or Keyword" onchange="onSearchChange(event)">
+                  </div>
+                </div>
+                <div class="post-list">
+                  <div class="post">
+                    <div class="post__title">
+                      
+                    </div>
+                    <p class="post__body">
+                      
+                    </p>
+                    <figure class="post__img">
+                      
+                    </figure>
+                  </div>
+                </div>
+    </body>
+ </head>
